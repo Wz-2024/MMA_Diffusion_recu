@@ -3,7 +3,7 @@ Official implementation of the paper: [**MMA-Diffusion: MultiModal Attack on Dif
 
 [![arXiv](https://img.shields.io/badge/arXiv-2311.17516-b31b1b.svg?style=plastic)](https://arxiv.org/abs/2311.17516)
 
-本repo的大部分代码都来自上述文献提供的仓库，这里只提供一些项目中可能存在的问题、最终不同效果的展示
+本repo的大部分代码都来自上述文献提供的仓库，这里只提供一些项目中运行可能存在的问题以及最终不同效果的展示
 
 ## 1.环境搭建
 这部分请直接参考原仓库，值得一题的是，因网络原因， 模型可能比较难下载，这时候可能用到镜像，以下是下载方式
