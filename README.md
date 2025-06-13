@@ -30,7 +30,7 @@ runway/stablediffusionv1-5是huggingface中每个模型的独特名字，直接�
 ## 3.最终效果
 如何利用跑出来的东西攻击离线和在线的模型，其实原说明文档中没讲明白。<br>
 首先是说明，对于Leonardo.ai，在2024年12月时，按照该项目默认设置的Epoch得到的最终prompt，已经无法攻击成功了，我们需要增加Epoch，从而获得更小的loss，才能成功完成攻击。<br>
-按照原文档运行`textual_attack.py`后，会输出若干文件夹，比如`/src/seed_6666`，具体的使用方式是，写一个非常简单的脚本，读出 `seed_6666/0_step_10000_adv_template_filtered_prompts_2_seed_6666`中的内容，挑出其中最小loss的prompt，在此repo中，您可以直接运行
+按照原文档运行`textual_attack.py`后，会输出若干文件夹，比如`/src/seed_6666`，具体的使用方式是，写一个非常简单的脚本，读出 `seed_6666/0_step_10000_adv_template_filtered_prompts_2_seed_6666`中的内容，挑出其中最小loss的prompt。在此repo中，已经提供好了一些seed下计算好的结果，每个seed在A100上耗费12h左右，Loss是非常低的，您可以直接运行
 ```bash
 python3 output_path.py
 ```
